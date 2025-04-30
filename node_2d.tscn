@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bct8bo0p4goig"]
+
+[ext_resource type="Script" uid="uid://b47ncvkijcq7c" path="res://line_2d.gd" id="3_epypp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0e48y"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+anti_aliasing = false
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 250.0
+offset_top = 120.0
+offset_right = 650.0
+offset_bottom = 320.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0e48y")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(200, 200, 200, 250, 0, 0)
+script = ExtResource("3_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Line2D"]
