@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dmso4pfh86ff2"]
+
+[ext_resource type="Script" uid="uid://cipf3b16u8p7x" path="res://gemeni_line_2d.gd" id="1_ja232"]
+
+[node name="GemeniLine" type="Node2D" unique_id=486460656]
+
+[node name="GemeniLine2D" type="Line2D" parent="." unique_id=547068255]
+position = Vector2(498, 244)
+points = PackedVector2Array(0, 0, 0, 20)
+script = ExtResource("1_ja232")

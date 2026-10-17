@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bahh6um6dr8la"]
+
+[ext_resource type="Script" uid="uid://eg1nupf832la" path="res://coll_line_2d.gd" id="1_1c0qq"]
+
+[node name="Collision line" type="Node2D" unique_id=1479554192]
+
+[node name="CollLine2D" type="Line2D" parent="." unique_id=1767595627]
+script = ExtResource("1_1c0qq")
+
+[node name="Area2D" type="Area2D" parent="CollLine2D" unique_id=288743597]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CollLine2D/Area2D" unique_id=127622236]
